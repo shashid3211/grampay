@@ -1,0 +1,121 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+.hero-pattern {
+	background: radial-gradient(
+		circle,
+		rgba(37, 99, 235, 0.1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+.card-hover {
+	transition: all 0.3s ease;
+}
+.card-hover:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.slide {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.slide.active {
+	opacity: 1;
+}
+.partner-card {
+	transition: all 0.3s ease;
+}
+.partner-card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.gradient-bg {
+	background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+}
+.service-icon {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+.flag-bar {
+	height: 6px;
+	background: linear-gradient(
+		90deg,
+		#ff9933 33%,
+		#ffffff 33%,
+		#ffffff 66%,
+		#138808 66%
+	);
+}
+.partner-card {
+	transition: all 0.3s ease;
+	border-bottom: 4px solid #3b82f6;
+}
+.partner-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.grampay-card {
+	transition: all 0.3s ease;
+	border-radius: 16px;
+	overflow: hidden;
+	height: 100%;
+}
+.grampay-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15),
+		0 10px 10px -5px rgba(59, 130, 246, 0.05);
+}
+.grampay-icon {
+	transition: all 0.3s ease;
+}
+.grampay-card:hover .grampay-icon {
+	transform: scale(1.1);
+}
+.gradient-text {
+	background: linear-gradient(90deg, #2563eb, #7c3aed);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.service-badge {
+	transition: all 0.2s ease;
+}
+.service-badge:hover {
+	transform: translateY(-2px);
+}
+.modal-content {
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+
+.form-input:focus {
+	box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.3);
+	border-color: #0ea5e9;
+}
+
+.animate-delay-100 {
+	animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+	animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+	animation-delay: 0.3s;
+}
+
+.partner-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4);
+}

@@ -1,0 +1,1525 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GramPay - Revolutionizing Financial Inclusivity</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#2563eb",
+							secondary: "#0ea5e9",
+							accent: "#10b981",
+							dark: "#1e293b",
+							light: "#f8fafc",
+						},
+					},
+				},
+			};
+		</script>
+		<link
+			rel="stylesheet"
+			href="./assets/css/style.css" />
+	</head>
+	<body class="bg-gray-50">
+		<!-- Navigation -->
+		<nav class="fixed w-full bg-white shadow-md z-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between h-16">
+					<div class="flex items-center">
+						<div class="flex-shrink-0 flex items-center">
+							<div
+								class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center"
+							>
+								<i class="fas fa-wallet text-white text-xl"></i>
+							</div>
+							<span class="ml-3 text-xl font-bold text-dark"
+								>Gram<span class="text-primary">Pay</span></span
+							>
+						</div>
+					</div>
+					<div class="hidden md:flex items-center space-x-8">
+						<a href="#home" class="text-dark hover:text-primary font-medium"
+							>Home</a
+						>
+						<a href="#about" class="text-dark hover:text-primary font-medium"
+							>About Us</a
+						>
+						<a href="#services" class="text-dark hover:text-primary font-medium"
+							>Services</a
+						>
+						<a href="#why" class="text-dark hover:text-primary font-medium"
+							>Why GramPay</a
+						>
+						<a
+							href="#advantages"
+							class="text-dark hover:text-primary font-medium"
+							>Advantages</a
+						>
+						<a href="#contact" class="text-dark hover:text-primary font-medium"
+							>Contact</a
+						>
+						<a
+							href="#"
+							class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition"
+							>Login</a
+						>
+					</div>
+					<div class="md:hidden flex items-center">
+						<button id="menuBtn" class="text-dark">
+							<i class="fas fa-bars text-2xl"></i>
+						</button>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Mobile Menu -->
+			<div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg">
+				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+					<a
+						href="#home"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>Home</a
+					>
+					<a
+						href="#about"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>About Us</a
+					>
+					<a
+						href="#services"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>Services</a
+					>
+					<a
+						href="#why"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>Why GramPay</a
+					>
+					<a
+						href="#advantages"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>Advantages</a
+					>
+					<a
+						href="#contact"
+						class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100"
+						>Contact</a
+					>
+					<a
+						href="#partner"
+						class="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-secondary"
+						>Become a Partner</a
+					>
+				</div>
+			</div>
+			<div class="flag-bar"></div>
+		</nav>
+
+		<!-- Hero Section with Carousel -->
+		<section id="home" class="pt-16 hero-pattern">
+			<div class="relative">
+				<!-- Carousel -->
+				<div class="relative h-[500px] overflow-hidden">
+					<!-- Slide 1: Farmers -->
+					<div
+						class="slide absolute inset-0 flex items-center justify-center active"
+					>
+						<div
+							class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+						>
+							<div>
+								<h1 class="text-4xl md:text-5xl font-bold text-dark mb-4 mt-10 pt-10">
+									Empowering Farmers with Financial Freedom
+								</h1>
+								<p class="text-lg text-gray-600 mb-6">
+									GramPay brings banking services directly to rural farmers,
+									enabling easy access to microloans, insurance, and secure
+									transactions.
+								</p>
+								<!-- <button
+									class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition"
+								>
+									Learn More
+								</button> -->
+							</div>
+							<div class="flex justify-center">
+								<img
+									src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=600&h=400&q=80"
+									alt="Farmer using GramPay"
+									class="rounded-xl shadow-lg"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide 2: Kirana Store Owners -->
+					<div class="slide absolute inset-0 flex items-center justify-center">
+						<div
+							class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+						>
+							<div>
+								<h1 class="text-4xl md:text-5xl font-bold text-dark mb-4 sm:mt-10 pt-10">
+									Retail Revolution for Kirana Stores
+								</h1>
+								<p class="text-lg text-gray-600 mb-6">
+									Transform your small store into a financial hub with GramPay's
+									POS solutions, bill payments, and banking services.
+								</p>
+								<!-- <button
+									class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition"
+									id="modal"
+								>
+									Become a Partner
+								</button> -->
+							</div>
+							<div class="flex justify-center">
+								<img
+									src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=600&h=400&q=80"
+									alt="Kirana store owner using GramPay"
+									class="rounded-xl shadow-lg"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide 3: Senior Citizens -->
+					<div class="slide absolute inset-0 flex items-center justify-center">
+						<div
+							class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+						>
+							<div>
+								<h1 class="text-4xl md:text-5xl font-bold text-dark mb-4 sm:mt-10 pt-10">
+									Banking Made Simple for Seniors
+								</h1>
+								<p class="text-lg text-gray-600 mb-6">
+									GramPay provides easy-to-use financial services at your
+									doorstep, eliminating the need for long bank visits.
+								</p>
+								<!-- <button
+									class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition"
+								>
+									Get Started
+								</button> -->
+							</div>
+							<div class="flex justify-center">
+								<img
+									src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&h=400&q=80"
+									alt="Senior citizen using GramPay"
+									class="rounded-xl shadow-lg"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide 4: Insurance & Banking -->
+					<div class="slide absolute inset-0 flex items-center justify-center">
+						<div
+							class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+						>
+							<div>
+								<h1 class="text-4xl md:text-5xl font-bold text-dark mb-4 sm:mt-10 pt-10">
+									Comprehensive Financial Solutions
+								</h1>
+								<p class="text-lg text-gray-600 mb-6">
+									Access banking, insurance, and payment services through
+									GramPay's integrated platform anywhere, anytime.
+								</p>
+								<!-- <button
+									class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition"
+								>
+									Explore Services -->
+								</button>
+							</div>
+							<div class="flex justify-center">
+								<img
+									src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&h=400&q=80"
+									alt="Financial services"
+									class="rounded-xl shadow-lg"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carousel Controls -->
+				<div
+					class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2"
+				>
+					<button
+						class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-primary focus:outline-none"
+						data-index="0"
+					></button>
+					<button
+						class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-primary focus:outline-none"
+						data-index="1"
+					></button>
+					<button
+						class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-primary focus:outline-none"
+						data-index="2"
+					></button>
+					<button
+						class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-primary focus:outline-none"
+						data-index="3"
+					></button>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Us Section -->
+		<section id="about" class="py-16 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						About <span class="gradient-text">GramPay</span>
+					</h1>
+					<div class="w-20 h-1 bg-primary mx-auto"></div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+					<div>
+						<h3 class="text-2xl font-semibold text-dark mb-4">
+							Revolutionizing Financial Inclusivity
+						</h3>
+						<p class="text-gray-600 mb-6">
+							<span class="gradient-text">GramPay</span> is a pioneering fintech company headquartered in Belagavi,
+							committed to revolutionizing financial inclusivity by offering a
+							wide range of accessible services tailored to individuals unable
+							to access traditional banking institutions.
+						</p>
+						<p class="text-gray-600 mb-6">
+							At <span class="gradient-text">GramPay</span>, we go beyond conventional banking norms to bring
+							essential financial solutions directly to our customers'
+							doorsteps, ensuring seamless and reliable access to crucial
+							services.
+						</p>
+						<p class="text-gray-600">
+							Our mission is rooted in bridging the gap for underserved
+							communities, providing efficient and trustworthy financial support
+							where it is needed most.
+						</p>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="bg-gray-100 p-6 rounded-lg">
+							<div class="text-primary text-4xl mb-3">
+								<i class="fas fa-users"></i>
+							</div>
+							<h4 class="font-semibold text-lg mb-2">Community Focused</h4>
+							<p class="text-gray-600">
+								Designed for underserved communities to access financial
+								services
+							</p>
+						</div>
+						<div class="bg-gray-100 p-6 rounded-lg">
+							<div class="text-primary text-4xl mb-3">
+								<i class="fas fa-hand-holding-usd"></i>
+							</div>
+							<h4 class="font-semibold text-lg mb-2">Doorstep Banking</h4>
+							<p class="text-gray-600">
+								Bringing essential financial solutions directly to customers
+							</p>
+						</div>
+						<div class="bg-gray-100 p-6 rounded-lg">
+							<div class="text-primary text-4xl mb-3">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<h4 class="font-semibold text-lg mb-2">Secure & Reliable</h4>
+							<p class="text-gray-600">
+								Trustworthy financial support with advanced security
+							</p>
+						</div>
+						<div class="bg-gray-100 p-6 rounded-lg">
+							<div class="text-primary text-4xl mb-3">
+								<i class="fas fa-lightbulb"></i>
+							</div>
+							<h4 class="font-semibold text-lg mb-2">Innovative Solutions</h4>
+							<p class="text-gray-600">
+								Cutting-edge technology for financial empowerment
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section
+			id="services"
+			class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50"
+		>
+			<div class="container mx-auto px-4 max-w-6xl">
+				<div class="text-center mb-16">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						<span class="gradient-text">GramPay</span> Financial Services
+					</h1>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Comprehensive banking solutions for every need, powered by India's
+						leading financial network
+					</p>
+					<div class="mt-8 flex justify-center">
+						<div
+							class="bg-gradient-to-r from-blue-500 to-indigo-600 h-1 w-24 rounded-full"
+						></div>
+					</div>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Aadhaar Services Card -->
+
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-cyan-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-money-bill-transfer text-2xl text-cyan-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							Aadhaar Enabled Payments
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Cash withdrawal and deposit using Aadhaar authentication. No need
+							for cards or PIN.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>AEPS</span
+							>
+							<span
+								class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Micro ATM</span
+							>
+						</div>
+					</div>
+					<!-- Banking Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-university text-2xl text-blue-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							Banking Services
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Complete banking solutions including accounts, deposits, and
+							financial management.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>Savings</span
+							>
+							<span
+								class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Current</span
+							>
+							<span
+								class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>FD/RD</span
+							>
+						</div>
+					</div>
+
+					<!-- POS Services Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-credit-card text-2xl text-green-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">POS Services</h3>
+						<p class="text-gray-600 mb-4">
+							Point of Sale solutions for businesses to accept digital payments
+							seamlessly.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>mPOS</span
+							>
+							<span
+								class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Card Machine</span
+							>
+						</div>
+					</div>
+
+					<!-- Micro Loans Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-hand-holding-usd text-2xl text-yellow-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">Micro Loans</h3>
+						<p class="text-gray-600 mb-4">
+							Small business loans and credit facilities with quick approval and
+							minimal documentation.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>MSME</span
+							>
+							<span
+								class="bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>KCC</span
+							>
+							<span
+								class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>SHG</span
+							>
+						</div>
+					</div>
+
+					<!-- Cash Collections Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-cash-register text-2xl text-purple-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							Cash Collections
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Secure cash pickup and deposit services for businesses and retail
+							customers.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>Pickup</span
+							>
+							<span
+								class="bg-violet-100 text-violet-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Deposit</span
+							>
+						</div>
+					</div>
+
+					<!-- Insurance Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-shield-alt text-2xl text-red-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">Insurance</h3>
+						<p class="text-gray-600 mb-4">
+							Affordable insurance products for life, health, crops and
+							vehicles.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>Health</span
+							>
+							<span
+								class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Life</span
+							>
+							<span
+								class="bg-rose-100 text-rose-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Crop</span
+							>
+						</div>
+					</div>
+
+					<!-- Travel Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-cyan-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-plane-departure text-2xl text-cyan-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							Travel Services
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Book flights, buses, hotels and holiday packages at competitive
+							prices.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>Flights</span
+							>
+							<span
+								class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Hotels</span
+							>
+						</div>
+					</div>
+
+					<!-- Fastag Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-tag text-2xl text-orange-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">Fastag & More</h3>
+						<p class="text-gray-600 mb-4">
+							FASTag recharge, toll payments, and parking solutions for seamless
+							travel.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>FASTag</span
+							>
+							<span
+								class="bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Toll</span
+							>
+							<span
+								class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Parking</span
+							>
+						</div>
+					</div>
+
+					<!-- BBPS Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-file-invoice text-2xl text-teal-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">BBPS Payments</h3>
+						<p class="text-gray-600 mb-4">
+							Pay all utility bills - electricity, water, gas, insurance and
+							loan repayments.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>BBPS</span
+							>
+							<span
+								class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Utilities</span
+							>
+						</div>
+					</div>
+
+					<!-- Recharges Card -->
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-mobile-alt text-2xl text-pink-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">Recharges</h3>
+						<p class="text-gray-600 mb-4">
+							Instant mobile prepaid, DTH, data card recharges and postpaid bill
+							payments.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>Prepaid</span
+							>
+							<span
+								class="bg-fuchsia-100 text-fuchsia-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>DTH</span
+							>
+							<span
+								class="bg-rose-100 text-rose-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>Data Card</span
+							>
+						</div>
+					</div>
+
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-hand-holding-heart text-2xl text-orange-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							Insurance Services
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Affordable insurance products for health, crops, livestock and
+							accidents.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>PMJJBY</span
+							>
+							<span
+								class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>PMFBY</span
+							>
+						</div>
+					</div>
+
+					<div class="partner-card bg-white rounded-xl p-6 shadow-lg">
+						<div
+							class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mb-6"
+						>
+							<i class="fas fa-mobile-alt text-2xl text-pink-600"></i>
+						</div>
+						<h3 class="text-xl font-bold text-gray-800 mb-3">
+							UPI & Digital Payments
+						</h3>
+						<p class="text-gray-600 mb-4">
+							UPI payments, QR codes, and mobile banking solutions for digital
+							transactions.
+						</p>
+						<div class="mt-4">
+							<span
+								class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+								>UPI</span
+							>
+							<span
+								class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+								>QR Pay</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why GramPay Section -->
+		<section id="why" class="py-16 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						Why Choose <span class="gradient-text">GramPay</span>?
+					</h1>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Discover the unique advantages that make <span class="gradient-text">GramPay</span> the preferred
+						choice for financial services
+					</p>
+					<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div
+						class="p-8 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-gray-100 shadow-sm"
+					>
+						<div class="text-primary text-5xl mb-4">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Community Empowerment</h3>
+						<p class="text-gray-600">
+							<span class="gradient-text">GramPay</span> is dedicated to empowering underserved communities by
+							providing access to essential financial services that were
+							previously out of reach.
+						</p>
+					</div>
+
+					<div
+						class="p-8 bg-gradient-to-br from-green-50 to-white rounded-xl border border-gray-100 shadow-sm"
+					>
+						<div class="text-primary text-5xl mb-4">
+							<i class="fas fa-door-open"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Doorstep Convenience</h3>
+						<p class="text-gray-600">
+							We bring banking to your doorstep, eliminating the need for long
+							journeys to distant bank branches.
+						</p>
+					</div>
+
+					<div
+						class="p-8 bg-gradient-to-br from-purple-50 to-white rounded-xl border border-gray-100 shadow-sm"
+					>
+						<div class="text-primary text-5xl mb-4">
+							<i class="fas fa-lock"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-3">Secure & Reliable</h3>
+						<p class="text-gray-600">
+							Our advanced security measures ensure your transactions and
+							financial data are always protected.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Advantages Section -->
+		<section id="advantages" class="py-16 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						Advantages of Partnering with
+						<span class="gradient-text">GramPay</span>
+					</h1>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Join our network and unlock these powerful benefits for your
+						business
+					</p>
+					<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+				</div>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-blue-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-blue-600 text-xl">📍</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">
+								Location Independence
+							</h3>
+						</div>
+						<p class="text-gray-600">
+							Seamlessly manage your operations from any location, at any time,
+							with the convenience of <span class="gradient-text">GramPay</span>.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-green-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-green-600 text-xl">🎯</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">Single Interface</h3>
+						</div>
+						<p class="text-gray-600">
+							Access a diverse range of services and provide them through one
+							user-friendly interface for maximum efficiency.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-purple-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-purple-600 text-xl">💸</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">
+								Lucrative Commissions
+							</h3>
+						</div>
+						<p class="text-gray-600">
+							Earn lucrative commissions on every successful transaction
+							processed by your network of retailers.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-yellow-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-yellow-600 text-xl">🌐</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">Network Expansion</h3>
+						</div>
+						<p class="text-gray-600">
+							Expand your revenue streams by connecting with numerous retailers
+							within your vicinity through <span class="gradient-text">GramPay</span>.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-red-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-red-600 text-xl">🤝</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">Dedicated Support</h3>
+						</div>
+						<p class="text-gray-600">
+							Receive dedicated support from relationship managers whenever you
+							require assistance, ensuring smooth operations.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-indigo-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-indigo-600 text-xl">📈</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">
+								Sustainable Income
+							</h3>
+						</div>
+						<p class="text-gray-600">
+							Cultivate a sustainable income by nurturing and expanding your
+							network of retailers with innovative tools.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-pink-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-pink-600 text-xl">⭐</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">
+								Value-Added Services
+							</h3>
+						</div>
+						<p class="text-gray-600">
+							Enhance customer attraction by offering a variety of value-added
+							services that are both convenient and appealing.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-teal-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-teal-600 text-xl">🔐</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">Secure Technology</h3>
+						</div>
+						<p class="text-gray-600">
+							Stand out in the market by providing secure and reliable services
+							powered by advanced technology.
+						</p>
+					</div>
+
+					<div
+						class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-orange-500"
+					>
+						<div class="flex items-center mb-4">
+							<div
+								class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3"
+							>
+								<span class="text-orange-600 text-xl">💰</span>
+							</div>
+							<h3 class="text-lg font-bold text-gray-800">
+								Cash Flow Optimization
+							</h3>
+						</div>
+						<p class="text-gray-600">
+							Optimize cash flow management and transaction processing with
+							streamlined solutions and real-time tracking.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Become a Partner Section -->
+		<section id="partner" class="py-16 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						Become a <span class="gradient-text">GramPay</span> Partner
+					</h1>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Join our network and unlock new revenue streams while serving your
+						community
+					</p>
+					<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+					<div>
+						<h3 class="text-2xl font-semibold mb-6">Partner Benefits</h3>
+
+						<div class="space-y-6">
+							<div class="flex items-start">
+								<div class="bg-green-100 p-3 rounded-full mr-4">
+									<i class="fas fa-rupee-sign text-green-600"></i>
+								</div>
+								<div>
+									<h4 class="font-semibold text-lg">Lucrative Earnings</h4>
+									<p class="text-gray-600">
+										Earn commissions on every transaction processed through your
+										network
+									</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div class="bg-blue-100 p-3 rounded-full mr-4">
+									<i class="fas fa-headset text-blue-600"></i>
+								</div>
+								<div>
+									<h4 class="font-semibold text-lg">Dedicated Support</h4>
+									<p class="text-gray-600">
+										Access to relationship managers for personalized assistance
+									</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div class="bg-purple-100 p-3 rounded-full mr-4">
+									<i class="fas fa-chart-line text-purple-600"></i>
+								</div>
+								<div>
+									<h4 class="font-semibold text-lg">Business Growth</h4>
+									<p class="text-gray-600">
+										Expand your customer base with value-added financial
+										services
+									</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div class="bg-yellow-100 p-3 rounded-full mr-4">
+									<i class="fas fa-tools text-yellow-600"></i>
+								</div>
+								<div>
+									<h4 class="font-semibold text-lg">Innovative Tools</h4>
+									<p class="text-gray-600">
+										Access cutting-edge technology to manage and grow your
+										business
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex items-center">
+						<div class="relative w-full">
+							<div
+								class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-grampay-blue to-grampay-indigo rounded-2xl transform rotate-3"
+							></div>
+							<div
+								class="relative bg-white rounded-2xl p-8 shadow-xl border border-gray-100"
+							>
+								<div class="text-center mb-8">
+									<h3 class="text-2xl font-bold text-gray-800 mb-2">
+										<span class="gradient-text">GramPay</span> Business App
+									</h3>
+									<p class="text-gray-600">
+										Manage your entire business from your smartphone
+									</p>
+								</div>
+								<div class="mb-8">
+									<!-- <img
+										src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+										alt="GramPay App"
+										class="w-full h-auto rounded-xl shadow-md"
+									/> -->
+
+									<img
+										src="https://placehold.co/300x200.png?text=GramPay+App"
+										alt="GramPay App"
+										class="w-full h-auto rounded-xl shadow-md"
+									/>
+								</div>
+								<div class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-4">
+									<button
+										class="flex items-center bg-black text-white px-6 py-3 rounded-lg"
+									>
+										<i class="fab fa-apple text-2xl mr-2"></i>
+										<div>
+											<p class="text-xs">Download on the</p>
+											<p class="font-bold">App Store</p>
+										</div>
+									</button>
+									<button
+										class="flex items-center bg-black text-white px-6 py-3 rounded-lg"
+									>
+										<i class="fab fa-google-play text-xl mr-2"></i>
+										<div>
+											<p class="text-xs">GET IT ON</p>
+											<p class="font-bold">Google Play</p>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="mt-12 bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-8"
+				>
+					<div class="max-w-4xl mx-auto text-center">
+						<h3 class="text-2xl font-bold mb-4">
+							Ready to Transform Your Business?
+						</h3>
+						<p class="mb-6">
+							Join thousands of partners who are already benefiting from
+							<span class="gradient-text">GramPay</span>'s innovative platform.
+						</p>
+						<a
+							id="openModal"
+							class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition inline-block cursor-pointer"
+							>Become a Partner Today</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="py-16 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						Contact Us
+					</h1>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Have questions or need assistance? Reach out to our team
+					</p>
+					<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+					<div>
+						<div class="bg-white rounded-xl shadow-md p-8">
+							<h3 class="text-xl font-semibold mb-6">Get In Touch</h3>
+
+							<div class="space-y-6">
+								<div class="flex items-start">
+									<div class="bg-primary p-3 rounded-full mr-4">
+										<i class="fas fa-map-marker-alt text-white"></i>
+									</div>
+									<div>
+										<h4 class="font-semibold text-lg">Headquarters</h4>
+										<p class="text-gray-600">Belagavi, Karnataka, India</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<div class="bg-primary p-3 rounded-full mr-4">
+										<i class="fas fa-phone-alt text-white"></i>
+									</div>
+									<div>
+										<h4 class="font-semibold text-lg">Phone</h4>
+										<p class="text-gray-600">+91 98765 43210</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<div class="bg-primary p-3 rounded-full mr-4">
+										<i class="fas fa-envelope text-white"></i>
+									</div>
+									<div>
+										<h4 class="font-semibold text-lg">Email</h4>
+										<p class="text-gray-600">info@grampay.in</p>
+									</div>
+								</div>
+
+								<div class="flex items-start">
+									<div class="bg-primary p-3 rounded-full mr-4">
+										<i class="fas fa-clock text-white"></i>
+									</div>
+									<div>
+										<h4 class="font-semibold text-lg">Business Hours</h4>
+										<p class="text-gray-600">Monday - Saturday: 9AM - 6PM</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white p-8 rounded-xl">
+						<h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+						<form>
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+								<div>
+									<label class="block text-gray-700 mb-2" for="cname"
+										>Name</label
+									>
+									<input
+										type="text"
+										id="cname"
+										class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+									/>
+								</div>
+								<div>
+									<label class="block text-gray-700 mb-2" for="cemail"
+										>Email</label
+									>
+									<input
+										type="email"
+										id="cemail"
+										class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+									/>
+								</div>
+							</div>
+
+							<div class="mb-4">
+								<label class="block text-gray-700 mb-2" for="subject"
+									>Subject</label
+								>
+								<input
+									type="text"
+									id="subject"
+									class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+								/>
+							</div>
+
+							<div class="mb-4">
+								<label class="block text-gray-700 mb-2" for="message"
+									>Message</label
+								>
+								<textarea
+									id="message"
+									rows="5"
+									class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+								></textarea>
+							</div>
+
+							<button
+								type="submit"
+								class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-secondary transition"
+							>
+								Send Message
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-dark text-white py-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+					<div>
+						<div class="flex items-center mb-4">
+							<div
+								class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center"
+							>
+								<i class="fas fa-wallet text-white text-xl"></i>
+							</div>
+							<span class="ml-3 text-xl font-bold"
+								>Gram<span class="text-primary">Pay</span></span
+							>
+						</div>
+						<p class="text-gray-300 mb-4">
+							Bringing financial services to every doorstep in India.
+						</p>
+						<div class="flex space-x-4">
+							<a href="#" class="text-gray-300 hover:text-white"
+								><i class="fab fa-facebook-f"></i
+							></a>
+							<a href="#" class="text-gray-300 hover:text-white"
+								><i class="fab fa-twitter"></i
+							></a>
+							<a href="#" class="text-gray-300 hover:text-white"
+								><i class="fab fa-instagram"></i
+							></a>
+							<a href="#" class="text-gray-300 hover:text-white"
+								><i class="fab fa-linkedin-in"></i
+							></a>
+						</div>
+					</div>
+
+					<div>
+						<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+						<ul class="space-y-2">
+							<li>
+								<a href="#home" class="text-gray-300 hover:text-white">Home</a>
+							</li>
+							<li>
+								<a href="#about" class="text-gray-300 hover:text-white"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a href="#services" class="text-gray-300 hover:text-white"
+									>Services</a
+								>
+							</li>
+							<li>
+								<a href="#partner" class="text-gray-300 hover:text-white"
+									>Become Partner</a
+								>
+							</li>
+							<li>
+								<a href="#contact" class="text-gray-300 hover:text-white"
+									>Contact Us</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="text-lg font-semibold mb-4">Services</h4>
+						<ul class="space-y-2">
+							<li>
+								<a href="#" class="text-gray-300 hover:text-white"
+									>Banking Services</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-gray-300 hover:text-white"
+									>BBPS Bill Payments</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-gray-300 hover:text-white"
+									>Aadhaar Pay</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-gray-300 hover:text-white"
+									>Micro Loans</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-gray-300 hover:text-white">Insurance</a>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="text-lg font-semibold mb-4">Legal Links</h4>
+						<ul class="space-y-2">
+							<li>
+								<a href="privacy-policy.html" class="text-gray-300 hover:text-white"
+									>Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="terms.html" class="text-gray-300 hover:text-white"
+									>Terms & Conditions</a
+								>
+							</li>
+							<li>
+								<a href="refund-policy.html" class="text-gray-300 hover:text-white"
+									>Refund Policy</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+				>
+					<p>&copy; 2023 <span class="gradient-text">GramPay</span>. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<div
+			id="modalBackdrop"
+			class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden opacity-0 transition-opacity duration-300"
+		></div>
+
+		<!-- Modal -->
+		<div
+			id="modal"
+			class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden"
+		>
+			<div class="w-full max-w-md">
+				<div class="modal-content bg-white animate-slide-up">
+					<!-- Modal Header -->
+					<div class="bg-gradient-to-r from-primary to-primary p-6 text-white">
+						<div class="flex justify-between items-center">
+							<h3 class="text-xl font-bold">
+								<i class="fas fa-handshake mr-2"></i> Partner Registration
+							</h3>
+							<button
+								id="closeModal"
+								class="text-white hover:text-gray-300 transition-colors"
+							>
+								<i class="fas fa-times text-xl"></i>
+							</button>
+						</div>
+						<p class="mt-2 text-white">Join our partner network today</p>
+					</div>
+
+					<!-- Modal Body - Form -->
+					<form class="p-6">
+						<div class="space-y-5">
+							<!-- Name Field -->
+							<div class="animate-slide-up animate-delay-100">
+								<label class="block text-gray-700 font-medium mb-2" for="name">
+									Full Name <span class="text-red-500">*</span>
+								</label>
+								<div class="relative">
+									<div
+										class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+									>
+										<i class="fas fa-user text-gray-400"></i>
+									</div>
+									<input
+										type="text"
+										id="name"
+										class="form-input w-full pl-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+										placeholder="Your Name"
+										required
+									/>
+								</div>
+							</div>
+
+							<!-- Contact Info -->
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+								<!-- Mobile Field -->
+								<div class="animate-slide-up animate-delay-200">
+									<label
+										class="block text-gray-700 font-medium mb-2"
+										for="mobile"
+									>
+										Mobile <span class="text-red-500">*</span>
+									</label>
+									<div class="relative">
+										<div
+											class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+										>
+											<i class="fas fa-mobile-alt text-gray-400"></i>
+										</div>
+										<input
+											type="tel"
+											id="mobile"
+											class="form-input w-full pl-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+											placeholder="xxxxx-xxxxx"
+											pattern="^\d{10}$"
+											required
+										/>
+									</div>
+								</div>
+
+								<!-- Email Field -->
+								<div class="animate-slide-up animate-delay-200">
+									<label
+										class="block text-gray-700 font-medium mb-2"
+										for="email"
+									>
+										Email
+									</label>
+									<div class="relative">
+										<div
+											class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+										>
+											<i class="fas fa-envelope text-gray-400"></i>
+										</div>
+										<input
+											type="email"
+											id="email"
+											class="form-input w-full pl-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+											placeholder="abc@mail.com"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<!-- Business Type -->
+							<div class="animate-slide-up animate-delay-300">
+								<label
+									class="block text-gray-700 font-medium mb-2"
+									for="businessType"
+								>
+									Business Type <span class="text-red-500">*</span>
+								</label>
+								<div class="relative">
+									<div
+										class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+									>
+										<i class="fas fa-building text-gray-400"></i>
+									</div>
+									<select
+										id="businessType"
+										class="form-input w-full pl-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 appearance-none bg-white"
+										required
+									>
+										<option value="" disabled selected>
+											Select your business type
+										</option>
+										<option value="technology">Technology</option>
+										<option value="retail">Retail</option>
+										<option value="manufacturing">Manufacturing</option>
+										<option value="healthcare">Healthcare</option>
+										<option value="finance">Finance</option>
+										<option value="education">Education</option>
+										<option value="other">Other</option>
+									</select>
+									<div
+										class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
+									>
+										<i class="fas fa-chevron-down text-gray-400"></i>
+									</div>
+								</div>
+							</div>
+
+							<!-- Message -->
+							<div class="animate-slide-up animate-delay-300">
+								<label
+									class="block text-gray-700 font-medium mb-2"
+									for="message"
+								>
+									Tell us about your business
+								</label>
+								<div class="relative">
+									<div class="absolute top-3 left-3">
+										<i class="fas fa-comment-alt text-gray-400"></i>
+									</div>
+									<textarea
+										id="message"
+										rows="4"
+										class="form-input w-full pl-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+										placeholder="Your business details, goals, and how we can collaborate..."
+									></textarea>
+								</div>
+							</div>
+
+							<!-- Agreement -->
+							<!-- <div class="animate-slide-up animate-delay-300 flex items-start">
+								<div class="flex items-center h-5">
+									<input
+										id="agreement"
+										type="checkbox"
+										class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded"
+										required
+									/>
+								</div>
+								<div class="ml-3 text-sm">
+									<label for="agreement" class="text-gray-600"
+										>I agree to the
+										<a
+											href="#"
+											class="text-primary hover:text-primary font-medium"
+											>Partner Terms & Conditions</a
+										></label
+									>
+								</div>
+							</div> -->
+						</div>
+
+						<!-- Submit Button -->
+						<div class="mt-8 animate-slide-up animate-delay-300">
+							<button
+								type="submit"
+								class="w-full bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-bold py-4 px-6 rounded-lg text-lg shadow-md transform transition-all duration-300 hover:scale-[1.02]"
+							>
+								Submit Application <i class="fas fa-paper-plane ml-2"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
