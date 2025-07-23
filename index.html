@@ -6,7 +6,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>GramPay - Revolutionizing Financial Inclusivity</title>
+		<meta name="description" content="GramPay - Revolutionizing Financial Inclusivity" />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -38,9 +43,10 @@
 					<div class="flex items-center">
 						<div class="flex-shrink-0 flex items-center">
 							<div
-								class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center"
+								class="w-10 h-10 rounded-lg flex items-center justify-center"
 							>
-								<i class="fas fa-wallet text-white text-xl"></i>
+								<!-- <i class="fas fa-wallet text-white text-xl"></i> -->
+								 <img src="./assets/images/logo.png" alt="GramPay Logo" class="w-full h-10">
 							</div>
 							<span class="ml-3 text-xl font-bold text-dark"
 								>Gram<span class="text-primary">Pay</span></span
@@ -69,7 +75,8 @@
 							>Contact</a
 						>
 						<a
-							href="#"
+							href="https://login.grampay.tech/"
+							target="_blank"
 							class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition"
 							>Login</a
 						>
@@ -116,10 +123,11 @@
 						>Contact</a
 					>
 					<a
-						href="#partner"
-						class="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-secondary"
-						>Become a Partner</a
-					>
+							href="https://login.grampay.tech/"
+							target="_blank"
+							class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition"
+							>Login</a
+						>
 				</div>
 			</div>
 			<div class="flag-bar"></div>
@@ -1036,7 +1044,7 @@
 									/> -->
 
 									<img
-										src="https://placehold.co/300x200.png?text=GramPay+App"
+										src="./assets/images/mockup-logo.png"
 										alt="GramPay App"
 										class="w-full h-auto rounded-xl shadow-md"
 									/>
@@ -1150,7 +1158,7 @@
 
 					<div class="bg-white p-8 rounded-xl">
 						<h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
-						<form>
+						<form id="contactForm">
 							<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
 								<div>
 									<label class="block text-gray-700 mb-2" for="cname"
@@ -1359,7 +1367,7 @@
 					</div>
 
 					<!-- Modal Body - Form -->
-					<form class="p-6">
+					<form id="partnerForm" class="p-6">
 						<div class="space-y-5">
 							<!-- Name Field -->
 							<div class="animate-slide-up animate-delay-100">
@@ -1528,6 +1536,14 @@
 				</div>
 			</div>
 		</div>
+		<!-- EmailJS Library -->
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script>
+			// Initialize EmailJS with your user ID
+			(function() {
+				emailjs.init("v4Pb5Ld_3UoJiZ0Aa");
+			})();
+		</script>
 		<script src="./assets/js/script.js"></script>
 	</body>
 </html>

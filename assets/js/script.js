@@ -99,16 +99,80 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	// Form submission handling
-	const form = document.querySelector("form");
-	form.addEventListener("submit", (e) => {
+	// Partner form submission handling (modal form)
+	const partnerForm = document.getElementById("partnerForm");
+	partnerForm.addEventListener("submit", (e) => {
 		e.preventDefault();
-		// Form validation would go here
-
-		// For demo purposes, just show an alert
-		alert(
-			"Thank you for your partner application! Our team will contact you shortly."
-		);
-		closeModal();
+		sendPartnerEmail(partnerForm);
 	});
+
+	// Contact form submission handling
+	const contactForm = document.getElementById("contactForm");
+	contactForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+		sendContactEmail(contactForm);
+	});
+
+	// Email sending functions
+	function sendPartnerEmail(form) {
+		const name = form.querySelector("#name").value;
+		const mobile = form.querySelector("#mobile").value;
+		const email = form.querySelector("#email").value;
+		const businessType = form.querySelector("#businessType").value;
+		const message = form.querySelector("#message").value;
+
+		const templateParams = {
+			to_name: "GramPay Team",
+			from_name: name,
+			from_email: email,
+			from_mobile: mobile,
+			business_type: businessType,
+			message: message,
+			subject: "New Partner Application",
+		};
+
+		emailjs.send("service_b7sb6lo", "template_7nz7thr", templateParams).then(
+			function () {
+				alert(
+					"Thank you for your partner application! Our team will contact you shortly."
+				);
+				form.reset();
+				closeModal();
+			},
+			function (error) {
+				console.error("Email sending failed:", error);
+				alert(
+					"Sorry, there was an error sending your application. Please try again later."
+				);
+			}
+		);
+	}
+
+	function sendContactEmail(form) {
+		const name = form.querySelector("#cname").value;
+		const email = form.querySelector("#cemail").value;
+		const subject = form.querySelector("#subject").value;
+		const message = form.querySelector("#message").value;
+
+		const templateParams = {
+			to_name: "GramPay Team",
+			from_name: name,
+			from_email: email,
+			subject: subject,
+			message: message,
+		};
+
+		emailjs.send("service_b7sb6lo", "template_369nn8t", templateParams).then(
+			function () {
+				alert("Thank you for your message! We will get back to you soon.");
+				form.reset();
+			},
+			function (error) {
+				console.error("Email sending failed:", error);
+				alert(
+					"Sorry, there was an error sending your message. Please try again later."
+				);
+			}
+		);
+	}
 });
